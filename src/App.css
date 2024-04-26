@@ -1,0 +1,492 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* header starts here */
+.header2{
+  height: 100px;
+  width: 100%;
+  /* background-color: #FF730E; */
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+}
+
+.header2 div{
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header2 div .icon{
+  font-size:40px;
+  color:#ee2a7b;
+  
+}
+
+.header2 div img{
+  width: 33px;
+}
+
+.header2 div .note{
+  margin-right: 10px;
+}
+
+
+
+/* header ends here */
+
+/* SIDEBAR STARTS HERE */
+
+.side{
+  /* background-color: #FFFACE; */
+  background-color: #000;
+  /* width: 15%; */
+  height: 100vh;
+  padding:0 0 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+
+}
+
+.logo-div{
+  text-align: center;
+}
+.logo-div h1{
+  font-size: 32px;
+  color: #c50404;
+}
+
+
+.side a{
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px 0;
+}
+.side .name{
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 10px;
+  
+}
+.side .name div{
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.side .name h4{
+  width: 85%;
+  color: #8d9498;
+}
+ .accts.active{
+  display: block;
+  font-size: 15px;
+  margin-top: 13px;
+  background-color: transparent;
+  color: #8d9498;
+}
+.accts.inactive{
+  display: none;
+}
+.side .name .icon{
+  font-size: 10px;
+}
+.side a{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.side div{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  padding: 9px 0 9px 5px;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease-in;
+}
+
+.side a div:hover{
+  
+  border-radius: 10px;
+  background-color: #c50404;
+}
+.side div .active{
+ background-color: #c50404;
+}
+.side section{
+  padding: 0;
+  margin: 0;
+}
+.side div h4{
+  width: 85%;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.side div .icon{
+  font-size: 21px;
+}
+.side .actives{
+  color: #fff;
+}
+.side .active{
+ background-color: #c50404;
+}
+
+.side .bar{
+  margin: 0;
+  width: 100%;
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.side .logo-div{
+  width: 90%;
+  margin: auto;
+  justify-content: start;
+}
+.side .bar .logo-div img{
+  width: 45px;
+}
+.side .bar .icon{
+  margin: auto;  
+  color: #fff;
+  font-size: 23px;
+}
+
+.side2{
+  display: none;
+}
+.media-bar{
+  display: none;
+}
+
+/* SIDEBAR ENDS HERE */
+
+
+/* DASHBOARD STARTS HERE */
+
+.dashb{
+  background-color: #fff ;
+  overflow-x: hidden;
+}
+.dashb .dashboard{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.dashb .dashboard main{
+  width: 100%;
+  /* padding: 25px 0; */
+}
+
+.dashb .dashboard main .left{
+  padding: 20px 20px 20px 50px;
+}
+.dashb .dashboard main h2{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.dashb .dashboard main .search{
+  width: 80%;
+  height: 70px;
+  border-radius: 10px;
+  opacity: 0.6px;
+  background-color: #F5F4EA;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.dashb .dashboard main .search img{
+  width: 30px;
+}
+
+.dashb .dashboard main .search input{
+  width: 85%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.dashb .dashboard main .cards-container{
+  width: 95%;
+  display: flex;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.dashb .dashboard main .cards-container .cardss{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+.dashb .dashboard main .cards-container .card1{
+  width: 90%;
+  background-color: hsla(0, 96%, 39%,.3);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  margin-bottom: 30px;
+  padding: 20px 0;
+ justify-content: center;
+ align-items: center;
+}
+
+.dashb .dashboard main .cards-container .card1 .icon-card{
+  width: 50px;
+  background-color: #fff;
+  border-radius: 100%;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashb .dashboard main .cards-container .card1 .icon-card img{
+  width: 50%;
+}
+
+.dashb .dashboard main .cards-container .card1 .icon-card .icons{
+  color: #c50404;
+  font-size: 20px;
+}
+
+.dashb .dashboard main .cards-container .card1 .card-text{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.dashb .dashboard main .cards-container .card1 .card-text p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+ }
+
+
+ /* PRODUCTS */
+ .dashb .dashboard .add{
+  margin-top: 50px;
+  padding: 20px;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+ }
+
+ .dashb .dashboard .add h2{
+  font-size: 30px;
+ }
+
+ .dashb .dashboard .add button{
+  padding: 10px;
+  background-color: #c50404;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+ }
+
+ .dashb .dashboard table{
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+  padding: 20px 0;
+ }
+
+ .dashb .dashboard table tr{
+  width: 80%;
+  margin: auto;
+  /* padding: 15px; */
+  background-color:hsla(224, 17%, 66%, .3) ;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  /* justify-content: space-between; */
+ }
+
+ .dashb .dashboard table .heading{
+  background-color: #000;
+  font-size: 19px;
+  text-align: left;
+  color: #fff;
+ }
+
+ .dashb .dashboard table tr th{
+  width: 40%;
+ }
+ .dashb .dashboard table tr td{
+  width: 40%;
+ }
+
+ .dashb .dashboard table tr .dt{
+  width: 20%;
+ }
+
+ .dashb .dashboard table tr .dt button{
+  background-color: #c50404;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px 12px;
+  border-radius: 5px;
+ }
+
+
+ /* Product modal */
+
+.modal1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal1 .modal1-content{
+  width: 80%;
+  background-color: #fff;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+
+.modal1 .modal1-content .close{
+  width: 90%;
+  margin: auto;
+  text-align: end;
+}
+
+.modal1 .modal1-content .close button{
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+.modal1 .modal1-content .product-form{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+}
+.modal1 .modal1-content .product-form div{
+  width: 48%;
+}
+.modal1 .modal1-content .product-form div p{
+  margin: 0;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.modal1 .modal1-content .product-form div input{
+  width: 95%;
+  background-color: transparent;
+  border: 2px solid #c50404;
+  height: 45px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.modal1 .modal1-content .product-form div select{
+  width: 95%;
+  background-color: transparent;
+  border: 2px solid #c50404;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.modal1 .modal1-content .product-form div button{
+  width: 95%;
+  height: 45px;
+  border: none;
+  background-color: #c50404;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 48px;
+}
+
+
+
+/* Product details modal */
+
+.modal1 .modal1-content .product-info{
+  width: 95%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.modal1 .modal1-content .product-info .product-images{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.modal1 .modal1-content .product-info .product-images img{
+  width: 30%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.modal1 .modal1-content .product-info p{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.modal1 .modal1-content .product-info p span{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+

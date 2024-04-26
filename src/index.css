@@ -1,0 +1,1062 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  align-items: center;
+}
+.header nav{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav h6{
+  width: 30%;
+  color: rgb(197, 4, 4);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header nav ul{
+  width: 13%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.header nav ul li{
+  font-size: 14px;
+}
+
+.header nav ul .btn{
+  border: 2px solid #c50404;
+  padding: 8px 7px;
+  border-radius: 6px;
+}
+
+.header nav ul .btn1{
+  border: 2px solid #c50404;
+  padding: 8px 7px;
+  border-radius: 6px;
+  background-color: #c50404;
+  color: #fff;
+}
+
+
+.hero{
+  width: 100%;
+  background-image: url(Assets/9\ Gifts\ Every\ Book\ Nerd\ Wants\ Their\ Boyfriend\ To\ Get\ Them\ In\ Lieu\ Of\ Flowers\ This\ Valentine\'s\ Day.jpeg);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.hero h2{
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 40px;
+  font-weight: 700;
+  
+}
+
+.hero button{
+  width: 20%;
+  font-size: 19px;
+  height: 60px;
+  color: #000;
+  border: 3px solid #000;
+  font-weight: 500;
+}
+
+
+/* slider component */
+.slider{
+  width: 100%;
+}
+.slider .slide{
+  width: 100%;
+  text-align:center ;
+}
+.slider img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  
+}
+
+/* Categories component */
+.categories{
+  width: 100%;
+  background-color: rgba(241, 124, 124, .3);
+  padding-bottom: 30px;
+}
+.categories .search{
+  width: 60%;
+  padding: 10px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: -30px;
+  z-index: 20;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+}
+.categories .search .input{
+  width: 75%;
+  padding-left: 10px;
+  border-right: 1px solid #5e5e5e;
+}
+.categories .search input{
+  width: 100%;
+  outline: none;
+  height: 20px;
+}
+.categories .search button{
+  width: 20%;
+  background-color: rgb(204, 51, 51);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600
+}
+.categories .category-cards{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.categories .category-cards .card{
+  width: 18%;
+  height: 30vh;
+  /* background-image: url(Assets/travel.png); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.categories .category-cards .card .dk{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, .6);
+  z-index: 1;
+  height: 100%
+}
+
+.categories .category-cards .card p{
+  color: #fff;
+  font-weight: 700;
+  font-size: 19px;
+  z-index: 2;
+}
+
+
+/* Multicarousel component */
+.multi{
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.multi h1{
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.multi h1 span{
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(197, 4, 4);
+  
+}
+.multi .item{
+  width: 94%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px 10px;
+  /* height: 40vh; */
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
+  border-radius: 1rem;
+  cursor: auto;
+}
+
+.multi .item img{
+  width: 100%;
+  height: 28vh;
+  border-radius: 20px;
+  position: relative;
+  object-fit: cover;
+}
+
+.multi .item h2{
+  font-size: 20px;
+  /* color: rgb(197, 4, 4); */
+  font-weight: 600;
+  margin-top: 22px;
+  text-align: left;
+}
+
+
+.multi .item .ticket{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid hsla(0, 0%, 37%, .4);
+  padding-bottom: 35px;
+}
+
+.multi .item .ticket .icon{
+  font-size: 24px;
+}
+
+.multi .item .ticket span{
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.multi .item .get{
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.multi .item .get button{
+  background-color: black;
+  color: #fff;
+  padding:10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.multi .item .get p{
+  margin: 0;
+  padding: 0;
+}
+
+.movies{
+  width: 95%;
+  margin: auto;
+}
+.movies .item .para{
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 200;
+
+}
+
+
+/* PartnerBg Component */
+.partner{
+  /* background-image: url(Assets/partner-bg.webp); */
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.partner div{
+  width: 85%;
+  margin: auto;
+}
+
+.partner div h1{
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.partner div h2{
+  width: 40%;
+  color: #d1d5db;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.partner div p{
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  width: 40%;
+  margin-bottom: 25px;
+}
+
+.partner div button{
+  background-color:  #c50404;
+  color: #fff;
+  font-size: 15px;
+  padding: 13px 30px;
+}
+
+
+/* StoreCard Component */
+.storeCards{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.storeCards .store{
+  width: 28%;
+}
+.storeCards .store h2{
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+.storeCards .store p{
+  font-size: 17px;
+  letter-spacing: .3px;
+  color: #8e8e8e;
+}
+
+.storeCards .store1{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid rgb(200, 210, 223);
+  border-radius: 10px;
+  padding-bottom: 20px;
+
+}
+
+.storeCards .store1 img{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+}
+
+.storeCards .store1 p{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.storeCards .store1 button{
+  background-color: #c50404;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* Footer Component */
+footer{
+  width: 100%;
+  margin-top: 40px;
+}
+footer .foot{
+  border-bottom: 1px solid #5e5e5e;
+}
+
+footer .foot1{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+footer .foot1 div{
+  width: 23%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer .foot1 div .link{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+footer .foot1 .priv{
+  width: 26%;
+}
+
+footer .foot1 .icon{
+  font-size: 28px;
+}
+
+
+
+
+
+
+
+
+.pricing{
+  text-align: center;
+  padding: 40px 0;
+}
+
+.pricing h2{
+  color:rgb(204, 51, 51);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+.pricing .price-plan{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(204, 51, 51);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.pricing .price-plan span{
+  width: 33.3%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+.lists{
+  width: 100%;
+  /* height: 70vh; */
+  margin-top: 50px;
+}
+
+.actives{
+  background-color:rgb(204, 51, 51);
+  color: #fff;
+}
+
+
+/* CONTACT */
+.all-c{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contact{
+  width: 64%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .cont{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.contact .cont .form-c{
+  width: 90%;
+  background-color: white;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
+  padding-bottom: 30px;
+  
+}
+
+.contact .cont .form-c h1{
+  font-size: 33px;
+  margin-top: 30px;
+}
+
+.contact .cont .form-c .form{
+  width: 92%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contact .cont .form-c .form input{
+  width: 100%;
+  border: 2px solid #c50404;
+  height: 55px;
+  border-radius: 10px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.contact .cont .form-c .form textarea{
+  width: 100%;
+  border: 2px solid #c50404;
+  height: 155px;
+  border-radius: 10px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.contact .cont .form-c .form button{
+  width: 100%;
+  border: 2px solid rgb(197, 4, 4);
+  height: 50px;
+  border-radius: 10px;
+  background-color: #c50404;
+  color: #F8FCFF;
+  font-size: 20px;
+}
+
+.contact-us{
+  width: 35%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-us div{
+  text-align: center;
+  width: 90%;
+  /* box-shadow: 10px 10px 90px  rgba(131, 129, 129, 0.1); */
+  box-shadow:10px 10px 15px #f5eeee;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact-us div .c-icons{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c50404;
+}
+
+.contact-us div h3{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.contact-us div a{
+  text-decoration: none;
+  color: #5e5e5e;
+  font-size: 16px;
+}
+
+/* login */
+.s-f{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signin .signin-l{
+  width: 60%;
+}
+
+.signin .signin-l img{
+  width: 100%;
+}
+
+.signin .signin-r{
+  width: 35%;
+  text-align: center;
+}
+
+.signin .signin-r img{
+  width: 42%;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+
+.signin .signin-r h3{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  margin-bottom: 40px;
+}
+
+.signin .signin-r .sign{
+  width: 100%;
+}
+
+.signin .signin-r .sign label{
+  width: 96%;
+  background-color: #F6F6F6;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding:0 2%;
+} 
+
+
+
+.signin .signin-r .sign label input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.signin .signin-r .sign label select{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.signin .signin-r .sign .pass{
+  margin-bottom: 10px;
+}
+.signin .signin-r .sign .pass input{
+  width: 90%;
+}
+
+.signin .signin-r .sign .rem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.signin .signin-r .sign .rem a{
+  color: #c50404;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+
+
+.signin .signin-r .sign button{
+  border: none;
+  background-color: #c50404;
+  font-size:19px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+  color: #fff
+}
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@media screen and (max-width: 1270px){
+  .header nav ul{
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1000px){
+  footer .foot1 div{
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 940px){
+  .header nav ul{
+    width: 25%;
+  }
+
+  .storeCards{
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .storeCards .store{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .storeCards .store1{
+    width: 45%;
+  }
+
+  .s-f{
+    height: auto;
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 780px){
+  .header nav ul{
+    width: 30%;
+  }
+
+  .header nav h6{
+    font-size: 30px;
+  }
+
+  .hero button{
+    width: 35%;
+  }
+
+  .categories .search{
+    width: 70%;
+  }
+
+  .pricing .price-plan{
+    width: 80%;
+  }
+
+  footer .foot1 .priv{
+    width: 35%;
+  }
+
+  .signin .signin-l{
+    width: 40%;
+    height: 100%;
+  }
+
+  .signin .signin-r{
+    width: 55%;
+  }
+
+
+}
+
+@media screen and (max-width: 675px){
+  .header nav ul{
+    width: 35%;
+  }
+
+  .categories .category-cards{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .categories .category-cards .card{
+    width: 20%;
+  }
+  .storeCards .store1 p{
+    font-size: 18px;
+  }
+
+
+  footer .foot1 div{
+    width: 42%;
+  }
+  footer .foot1 div .link{
+    font-size: 15.5px;
+  }
+  footer .foot1 .icon{
+    font-size: 19px;
+  }
+  footer .foot1 div p{
+    font-size: 15px;
+  }
+  footer .foot1 .priv span{
+    font-size: 15.5px;
+  }
+
+  .signin{
+    justify-content: center;
+  }
+  .signin .signin-l{
+    display: none;
+  }
+  .signin .signin-r{
+    width: 70%;
+  }
+  
+
+}
+
+@media screen and (max-width: 570px){
+  .header nav ul{
+    width: 45%;
+  }
+  .header nav ul li{
+    font-size: 15px;
+  }
+  .header nav h6{
+    font-size: 26px;
+  }
+
+  .hero h2{
+    font-size: 27px;
+  }
+
+  .hero button{
+    width: 40%;
+    font-size: 16px;
+  }
+
+  .categories .search{
+    width: 80%;
+  }
+
+  .pricing .price-plan{
+    width: 100%;
+  }
+
+  .pricing .price-plan span{
+    font-size: 16px;
+  }
+
+  .storeCards .store h2{
+    font-size: 24px;
+  }
+  .storeCards .store p{
+    font-size: 16px;
+  }
+  .storeCards .store1{
+    width: 48%;
+  }
+  footer .foot1 div .link{
+    font-size: 14px;
+  }
+
+  footer .foot1 .priv span{
+    font-size: 13.5px;
+  }
+
+  footer .foot1 div p{
+    font-size: 13.5px;
+  }
+
+  .all-c{
+    flex-direction: column;
+  }
+
+  .contact{
+    width: 100%;
+  }
+
+  .contact-us{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .contact-us div{
+    margin: auto;
+  }
+
+  .signin .signin-r{
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 470px){
+  footer .foot1 div{
+    width: 45%;
+  }
+}
+
+
+@media screen and (max-width: 450px){
+  .header nav ul{
+    width: 50%;
+  }
+  .categories .search{
+    width: 90%;
+  }
+  .categories .search button{
+    font-size: 16px;
+  }
+
+  .storeCards .store1{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  footer .foot1 .priv{
+    width: 45%;
+  }
+  .contact .cont .form-c h1{
+    font-size: 26px;
+  }
+
+}
+
+@media screen and (max-width: 420px){
+  footer .foot1{
+    flex-wrap: wrap;
+  }
+  footer .foot1 div{
+    width: 50%;
+  }
+
+  footer .foot1 .f-icons{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .header nav ul{
+    width: 55%;
+  }
+
+  .categories .category-cards .card{
+    width: 40%;
+  }
+
+  .multi{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 370px){
+  footer .foot1 div{
+    width: 55%;
+  }
+
+  footer .foot1 .f-icons{
+    width: 35%;
+  }
+  footer .foot2{
+    flex-wrap: wrap;
+  }
+
+  footer .foot2 div{
+    width: 100%;
+  }
+
+  footer .foot1 .priv{
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .signin .signin-r{
+    width: 100%;
+  }
+
+ 
+}
+
+@media screen and (max-width: 350px){
+  .header nav ul{
+    width: 65%;
+  }
+  .hero h2 {
+    font-size: 23px;
+  }
+
+  .hero button{
+    width: 50%;
+  }
+
+  .categories .search{
+    width: 95%;
+  }
+
+  .categories .search .input{
+    width: 65%;
+  }
+
+  .categories .search button{
+    width: 30%;
+  }
+  .categories .category-cards .card{
+    width: 90%;
+  }
+  footer .foot1 div{
+    width: 60%;
+  }
+  footer .foot1 .f-icons{
+    width: 32%;
+  }
+ 
+
+}
+
+
+@media screen and (max-width: 320px){
+  footer .foot1 div{
+    width: 75%;
+    margin-top: 15px;
+  }
+  footer .foot1 .f-icons{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .header nav ul{
+    width: 72%;
+  }
+  .hero button{
+    width: 60%;
+  }
+  footer .foot1 .f-icons{
+    width: 45%;
+  }
+  .contact-us div h3{
+    font-size: 19px;
+  }
+  
+}

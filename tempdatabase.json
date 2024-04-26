@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": "db3f",
+      "fullName": "Vincent Ekene Nwafor",
+      "email": "vincentwilliamsjohn9626@gmail.com",
+      "phoneNumber": "08137962688",
+      "password": "12345",
+      "address": "840 nasiru el rufia crescent,guzape"
+    },
+    {
+      "id": "1900",
+      "name": "Vincent Ekene Nwafor",
+      "email": "vincentwilliamsjohn9626@gmail.com",
+      "address": "840 nasiru el rufia crescent,guzape",
+      "password": "123456",
+      "Name": "Vincent Ekene Nwafor"
+    }
+  ],
+  "books": [
+    {
+      "id": "00f6",
+      "name": "Cold Dark",
+      "price": "64",
+      "category": "men",
+      "image": {}
+    }
+  ],
+  "borrowings": [
+    {
+      "id": "0071",
+      "borrowDate": "25/04/2024",
+      "returnDate": "30/04/2024"
+    },
+    {
+      "id": "5ed8",
+      "user": "Vincent",
+      "book": "Cooled Night",
+      "borrowDate": "25/04/2024",
+      "returnDate": "30/04/2024",
+      "User": "v"
+    }
+  ],
+  "librarians": [
+    
+    {
+      "id": "61b1",
+      "name": "Vincent Ekene Nwafor",
+      "email": "vincentwilliamsjohn9626@gmail.com",
+      "address": "840 nasiru el rufia crescent,guzape",
+      "password": "123456",
+      "Name": "Vincent Ekene Nwafor"
+    },
+    {
+      "id": "81cc",
+      "name": "Vincent Ekene Nwafor",
+      "email": "vincentwilliamsjohn9626@gmail.com",
+      "address": "840 nasiru el rufia crescent,guzape",
+      "password": "123458"
+    }
+  ],
+  "categories": [
+    {
+      "id": "9e8a",
+      "name": "Admin",
+      "description": "Boss"
+    }
+  ],
+  "publishers": [
+    {
+      "id": "111a",
+      "skillId": "1002",
+      "skillName": "Frontend Developer"
+    },
+    {
+      "id": "5e88",
+      "publisherName": "Victor Eze",
+      "books": "",
+      "book": "men"
+    }
+  ]
+}
