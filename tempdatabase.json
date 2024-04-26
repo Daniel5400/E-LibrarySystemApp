@@ -32,6 +32,12 @@
       "price": "64",
       "category": "men",
       "image": {}
+    },
+    {
+      "id": "77c4",
+      "name": "Mocking bird",
+      "price": "",
+      "category": "men"
     }
   ],
   "borrowings": [
@@ -47,6 +53,13 @@
       "borrowDate": "25/04/2024",
       "returnDate": "30/04/2024",
       "User": "v"
+    },
+    {
+      "id": "7bb6",
+      "user": "micheal west",
+      "book": "mocking bird",
+      "borrowDate": "02/05/2024",
+      "returnDate": "05/05/2024"
     }
   ],
   "librarians": [
@@ -64,6 +77,13 @@
       "email": "vincentwilliamsjohn9626@gmail.com",
       "address": "840 nasiru el rufia crescent,guzape",
       "password": "123458"
+    },
+    {
+      "id": "26e5",
+      "name": "Obinna Chukwu",
+      "email": "obinnadaniel5400@gmail.com",
+      "address": "216a portland road",
+      "password": "07030816222"
     }
   ],
   "categories": [
@@ -71,6 +91,11 @@
       "id": "9e8a",
       "name": "Admin",
       "description": "Boss"
+    },
+    {
+      "id": "addb",
+      "categoryId": "1",
+      "categoryName": "Newspaper"
     }
   ],
   "publishers": [
@@ -84,6 +109,12 @@
       "publisherName": "Victor Eze",
       "books": "",
       "book": "men"
+    },
+    {
+      "id": "18aa",
+      "publisherName": "John Joke",
+      "books": "",
+      "book": "women"
     }
   ]
 }
