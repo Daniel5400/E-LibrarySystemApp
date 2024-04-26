@@ -15,6 +15,14 @@
       "address": "840 nasiru el rufia crescent,guzape",
       "password": "123456",
       "Name": "Vincent Ekene Nwafor"
+    },
+    {
+      "id": "64c7",
+      "fullName": "Obinna Chukwu",
+      "email": "obinnadaniel5400@gmail.com",
+      "phoneNumber": "07586251534",
+      "password": "12345",
+      "address": "216a portland road"
     }
   ],
   "books": [
@@ -42,7 +50,6 @@
     }
   ],
   "librarians": [
-    
     {
       "id": "61b1",
       "name": "Vincent Ekene Nwafor",
