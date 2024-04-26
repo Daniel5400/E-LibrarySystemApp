@@ -51,7 +51,7 @@ const Sidebar = () => {
         
         <div className='logo-div'
          >
-            <h1 onClick={toggle} style={{cursor:'pointer'}}>Wit</h1>
+            <h1 onClick={toggle} style={{cursor:'pointer'}}>READEASE</h1>
         </div>
         
         {/* <FaBars className='icon' onClick={toggle} style={{cursor:'pointer'}}/> */}

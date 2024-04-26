@@ -22,7 +22,7 @@ const Header = () => {
         
       <nav>
 
-        <Link to={'/'}> <h6 className='sharon'>Wit</h6></Link>
+        <Link to={'/'}> <h6 className='sharon'>READEASE</h6></Link>
 
         <div className='bars' onClick={handleClick}>  
           {/* {click ? (<RiCloseFill id='close'/>) : (<FaBars id='bar' />)} */}

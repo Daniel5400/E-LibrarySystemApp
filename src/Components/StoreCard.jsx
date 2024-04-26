@@ -15,14 +15,14 @@ const StoreCard = () => {
 
         <div className="store1">
             <img src={store1} alt="" />
-            <p>PH Branch</p>
+            <p>Essex Branch</p>
             <a href='#shop'><button>Shop</button></a>
             
         </div>
 
         <div className="store1">
             <img src={store2} alt="" />
-            <p>Lagos Branch</p>
+            <p>Peckham Branch</p>
             <a href='#shop'><button>Shop</button></a>
             
         </div>
